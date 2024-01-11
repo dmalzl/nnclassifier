@@ -51,7 +51,7 @@ def train_test_histories_to_dataframe(train_history, test_history, value_name):
     return history_frame
 
 
-def train_model(model, X, y, n_epochs = 100):
+def train_model(model, X, y, n_epochs = 10):
     """
     trains a given model on the provided data for n_epochs.
     train test split is performed automatically here 10% of the data are held out
