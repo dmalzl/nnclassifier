@@ -72,7 +72,7 @@ class NeuralNetClassifier(nn.Module):
         self, 
         n_input_features = 12, 
         n_output_features = 3, 
-        hidden_layer_sizes = [24],
+        hidden_layer_sizes = [5],
         activation = None
     ):
         super().__init__()
