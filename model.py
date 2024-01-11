@@ -17,7 +17,7 @@ def generate_layers(n_input_features, n_output_features, hidden_layer_sizes):
         return [input_layer, output_layer]
 
     layers = [input_layer]
-    for in_size, out_size in pairwise(hidden_layer_sizes[:-1]):
+    for in_size, out_size in pairwise(hidden_layer_sizes):
         layers.append(
             nn.Linear(in_size, out_size)
         )
